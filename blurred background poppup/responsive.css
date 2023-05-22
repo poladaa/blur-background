@@ -1,0 +1,35 @@
+@media (max-width: 400px) {
+  .container h1 {
+    margin-bottom: 4rem;
+    color: #c92a2a;
+    font-size: 3.4rem;
+  }
+  .btn {
+    font-size: 2rem;
+  }
+
+  .popup-window {
+    width: 90%;
+    top: 65%;
+  }
+
+  .active.popup-window {
+    top: 10%;
+  }
+
+  .offer ion-icon {
+    width: 30px;
+    height: 30px;
+  }
+  .marketing {
+    font-size: 2.2rem;
+  }
+  .offer p {
+    font-size: 1.6rem;
+  }
+
+  .popup-btn {
+    width: 40%;
+    font-size: 1.6rem;
+  }
+}

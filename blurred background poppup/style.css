@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background: url("https://images.unsplash.com/photo-1603481546238-487240415921?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80");
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: filter 0.7s;
+}
+
+.container h1 {
+  margin-bottom: 6rem;
+  color: #c92a2a;
+  font-size: 6.4rem;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 2px pink;
+}
+.btn {
+  cursor: pointer;
+  border: none;
+  font-size: 3rem;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  background-color: #dee2e6;
+  color: #ff6b6b;
+}
+.btn:hover {
+  color: #c92a2a;
+  background-color: #ced4da;
+  transition: all 0.5s ease-in-out;
+}
+
+.active.container {
+  filter: brightness(0.2);
+}
+.popup-window {
+  position: fixed;
+  width: 50rem;
+  height: 20rem;
+  background-color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background: url("https://images.unsplash.com/photo-1580927752452-89d86da3fa0a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80");
+  background-size: cover;
+  opacity: 1;
+  transition: all 0.7s;
+}
+
+.offer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1.4rem;
+  padding: 1rem;
+}
+
+.offer ion-icon {
+  width: 36px;
+  height: 36px;
+  color: #ff8787;
+  cursor: pointer;
+}
+
+.offer p {
+  font-size: 2rem;
+  color: #fff;
+}
+.marketing {
+  color: #c92a2a;
+  font-size: 3.4rem;
+}
+
+.register {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1rem;
+}
+
+label {
+  font-size: 1.6rem;
+  color: #c92a2a;
+  margin-bottom: 1rem;
+}
+input {
+  width: 90%;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  text-align: center;
+}
+.popup-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  border: none;
+  width: 30%;
+  height: 4rem;
+  font-size: 2rem;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: black;
+  color: #c92a2a;
+}
+
+.active.popup-window {
+  visibility: hidden;
+  opacity: 0;
+  top: 10%;
+}
